@@ -21,5 +21,11 @@ class TestFootballTeam < MiniTest::Test
   assert_equal('Graeme_doran', @football.coach)
   end
 
+  def test_set_name
+    @football.set_name('David_Goodbrand')
+    assert_equal('David_Goodbrand', @football.coach)
+  end
 
+  # def test_add_new_player
+  #
 end
